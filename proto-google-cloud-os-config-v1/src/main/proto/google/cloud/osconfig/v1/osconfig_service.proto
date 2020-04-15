@@ -34,11 +34,6 @@ option (google.api.resource_definition) = {
   pattern: "projects/{project}/zones/{zone}/instances/{instance}"
 };
 
-option (google.api.resource_definition) = {
-  type: "compute.googleapis.com/Instance"
-  pattern: "projects/{project}/zones/{zone}/instances/{instance}"
-};
-
 // OS Config API
 //
 // The OS Config service is a server-side component that you can use to
