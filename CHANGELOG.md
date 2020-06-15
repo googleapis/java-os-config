@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.1](https://www.github.com/googleapis/java-os-config/compare/v0.1.0...v0.1.1) (2020-06-15)
+
+
+### Bug Fixes
+
+* migrate osconfig & agentendpoint to grpc_service_config ([#55](https://www.github.com/googleapis/java-os-config/issues/55)) ([4430f49](https://www.github.com/googleapis/java-os-config/commit/4430f492ef6d93b42b45774a23162f4637638d89))
+
 ## 0.1.0 (2020-05-05)
 
 
