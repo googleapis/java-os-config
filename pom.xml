@@ -4,7 +4,7 @@
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-os-config-parent</artifactId>
   <packaging>pom</packaging>
-  <version>0.1.1-SNAPSHOT</version><!-- {x-version-update:google-cloud-os-config:current} -->
+  <version>0.2.1-SNAPSHOT</version><!-- {x-version-update:google-cloud-os-config:current} -->
   <name>Google OS Config API Parent</name>
   <url>https://github.com/googleapis/java-os-config</url>
   <description>
@@ -14,7 +14,7 @@
   <parent>
     <groupId>com.google.cloud</groupId>
     <artifactId>google-cloud-shared-config</artifactId>
-    <version>0.8.1</version>
+    <version>0.9.2</version>
   </parent>
 
   <developers>
@@ -70,23 +70,23 @@
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-os-config</artifactId>
-        <version>0.1.1-SNAPSHOT</version><!-- {x-version-update:google-cloud-os-config:current} -->
+        <version>0.2.1-SNAPSHOT</version><!-- {x-version-update:google-cloud-os-config:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-os-config-v1</artifactId>
-        <version>0.1.1-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-os-config-v1:current} -->
+        <version>0.2.1-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-os-config-v1:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-os-config-v1</artifactId>
-        <version>0.1.1-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-os-config-v1:current} -->
+        <version>0.2.1-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-os-config-v1:current} -->
       </dependency>
 
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-shared-dependencies</artifactId>
-        <version>0.8.1</version>
+        <version>0.8.2</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -107,7 +107,10 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
           <configuration>
-            <ignoredUnusedDeclaredDependencies>org.objenesis:objenesis</ignoredUnusedDeclaredDependencies>
+            <ignoredUnusedDeclaredDependencies>
+              <ignoredUnusedDeclaredDependency>org.objenesis:objenesis</ignoredUnusedDeclaredDependency>
+              <ignoredUnusedDeclaredDependency>javax.annotation:javax.annotation-api</ignoredUnusedDeclaredDependency>
+            </ignoredUnusedDeclaredDependencies>
           </configuration>
         </plugin>
       </plugins>
