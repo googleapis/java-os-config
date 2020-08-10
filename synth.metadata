@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-os-config.git",
-        "sha": "b7b8c087b16eb2e88e09942735b6802121f99b64"
+        "sha": "221f2f2e98f266aa89de5dda189cc0ad3dade2d4"
       }
     },
     {
