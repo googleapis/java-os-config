@@ -33,7 +33,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.ExecutionException;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -46,8 +45,7 @@ public class ITSystemTest {
   private static final String PROJECT = ServiceOptions.getDefaultProjectId();
   private static final String ID = UUID.randomUUID().toString();
   private static final String DESCRIPTION = "description";
-  private static final String PATCH_DEPLOYMENT_ID =
-      RandomStringUtils.randomAlphabetic(5).toLowerCase();
+  private static final String PATCH_DEPLOYMENT_ID = "pd" + ID.substring(0, 3);
   private static final PatchDeploymentName PATCH_DEPLOYMENT_NAME =
       PatchDeploymentName.of(PROJECT, PATCH_DEPLOYMENT_ID);
   private static final ProjectName PARENT = ProjectName.of(PROJECT);
