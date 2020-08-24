@@ -110,7 +110,6 @@ public class ITSystemTest {
     assertNotNull(response.getRecurringSchedule());
     assertEquals(TIME_ZONE, response.getRecurringSchedule().getTimeZone());
     assertEquals(TIME_OF_DAY, response.getRecurringSchedule().getTimeOfDay());
-    assertEquals(TIME_ZONE, response.getRecurringSchedule().getTimeZone());
     assertEquals(FREQUENCY, response.getRecurringSchedule().getFrequency());
     assertEquals(MONTHLY_SCHEDULE, response.getRecurringSchedule().getMonthly());
     assertNotNull(response.getCreateTime());
