@@ -98,9 +98,6 @@ public class ITSystemTest {
   }
 
   @Test
-  public void createPatchDeploymentTest() {}
-
-  @Test
   public void getPatchDeploymentTest() {
     PatchDeployments.GetPatchDeploymentRequest getPatchDeploymentRequest =
         PatchDeployments.GetPatchDeploymentRequest.newBuilder()
@@ -133,7 +130,6 @@ public class ITSystemTest {
     assertNotNull(patchDeployments.get(0).getRecurringSchedule());
     assertEquals(TIME_ZONE, patchDeployments.get(0).getRecurringSchedule().getTimeZone());
     assertEquals(TIME_OF_DAY, patchDeployments.get(0).getRecurringSchedule().getTimeOfDay());
-    assertEquals(TIME_ZONE, patchDeployments.get(0).getRecurringSchedule().getTimeZone());
     assertEquals(FREQUENCY, patchDeployments.get(0).getRecurringSchedule().getFrequency());
     assertEquals(MONTHLY_SCHEDULE, patchDeployments.get(0).getRecurringSchedule().getMonthly());
     assertNotNull(patchDeployments.get(0).getCreateTime());
