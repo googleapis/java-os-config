@@ -15,7 +15,9 @@
  */
 package com.google.cloud.osconfig.v1.it;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import com.google.api.core.ApiFuture;
 import com.google.cloud.ServiceOptions;
@@ -200,7 +202,7 @@ public class ITSystemTest {
             client.listPatchJobInstanceDetails(listPatchJobInstanceDetailsRequest).iterateAll());
     assertTrue(patchJobsDetails.size() >= 0);
 
-    // CancelPatchJob
+    // Cancel PatchJob
     PatchJobs.CancelPatchJobRequest cancelPatchJobRequest =
         PatchJobs.CancelPatchJobRequest.newBuilder().setName(response.getName()).build();
     PatchJobs.PatchJob cancelPatchJob = client.cancelPatchJob(cancelPatchJobRequest);
