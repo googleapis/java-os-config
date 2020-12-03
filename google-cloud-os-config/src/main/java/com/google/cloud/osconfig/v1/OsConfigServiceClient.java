@@ -32,7 +32,6 @@ import com.google.common.util.concurrent.MoreExecutors;
 import com.google.protobuf.Empty;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Generated;
 
@@ -182,7 +181,7 @@ public class OsConfigServiceClient implements BackgroundResource {
   public final PatchJobs.PatchJob getPatchJob(PatchJobName name) {
     PatchJobs.GetPatchJobRequest request =
         PatchJobs.GetPatchJobRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     return getPatchJob(request);
   }
@@ -257,7 +256,7 @@ public class OsConfigServiceClient implements BackgroundResource {
   public final ListPatchJobsPagedResponse listPatchJobs(ProjectName parent) {
     PatchJobs.ListPatchJobsRequest request =
         PatchJobs.ListPatchJobsRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .build();
     return listPatchJobs(request);
   }
@@ -320,7 +319,7 @@ public class OsConfigServiceClient implements BackgroundResource {
       PatchJobName parent) {
     PatchJobs.ListPatchJobInstanceDetailsRequest request =
         PatchJobs.ListPatchJobInstanceDetailsRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .build();
     return listPatchJobInstanceDetails(request);
   }
@@ -401,7 +400,7 @@ public class OsConfigServiceClient implements BackgroundResource {
       String patchDeploymentId) {
     PatchDeployments.CreatePatchDeploymentRequest request =
         PatchDeployments.CreatePatchDeploymentRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setPatchDeployment(patchDeployment)
             .setPatchDeploymentId(patchDeploymentId)
             .build();
@@ -473,7 +472,7 @@ public class OsConfigServiceClient implements BackgroundResource {
   public final PatchDeployments.PatchDeployment getPatchDeployment(PatchDeploymentName name) {
     PatchDeployments.GetPatchDeploymentRequest request =
         PatchDeployments.GetPatchDeploymentRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     return getPatchDeployment(request);
   }
@@ -526,7 +525,7 @@ public class OsConfigServiceClient implements BackgroundResource {
   public final ListPatchDeploymentsPagedResponse listPatchDeployments(ProjectName parent) {
     PatchDeployments.ListPatchDeploymentsRequest request =
         PatchDeployments.ListPatchDeploymentsRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .build();
     return listPatchDeployments(request);
   }
@@ -592,7 +591,7 @@ public class OsConfigServiceClient implements BackgroundResource {
   public final void deletePatchDeployment(PatchDeploymentName name) {
     PatchDeployments.DeletePatchDeploymentRequest request =
         PatchDeployments.DeletePatchDeploymentRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     deletePatchDeployment(request);
   }
