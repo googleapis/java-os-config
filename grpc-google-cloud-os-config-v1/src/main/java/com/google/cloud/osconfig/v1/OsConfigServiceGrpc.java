@@ -22,7 +22,15 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/** */
+/**
+ *
+ *
+ * <pre>
+ * OS Config API
+ * The OS Config service is a server-side component that you can use to
+ * manage package installations and patch jobs for virtual machine instances.
+ * </pre>
+ */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/osconfig/v1/osconfig_service.proto")
@@ -515,10 +523,24 @@ public final class OsConfigServiceGrpc {
     return OsConfigServiceFutureStub.newStub(factory, channel);
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * OS Config API
+   * The OS Config service is a server-side component that you can use to
+   * manage package installations and patch jobs for virtual machine instances.
+   * </pre>
+   */
   public abstract static class OsConfigServiceImplBase implements io.grpc.BindableService {
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Patch VM instances by creating and running a patch job.
+     * </pre>
+     */
     public void executePatchJob(
         com.google.cloud.osconfig.v1.PatchJobs.ExecutePatchJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.osconfig.v1.PatchJobs.PatchJob>
@@ -526,7 +548,14 @@ public final class OsConfigServiceGrpc {
       asyncUnimplementedUnaryCall(getExecutePatchJobMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get the patch job. This can be used to track the progress of an
+     * ongoing patch job or review the details of completed jobs.
+     * </pre>
+     */
     public void getPatchJob(
         com.google.cloud.osconfig.v1.PatchJobs.GetPatchJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.osconfig.v1.PatchJobs.PatchJob>
@@ -534,7 +563,14 @@ public final class OsConfigServiceGrpc {
       asyncUnimplementedUnaryCall(getGetPatchJobMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Cancel a patch job. The patch job must be active. Canceled patch jobs
+     * cannot be restarted.
+     * </pre>
+     */
     public void cancelPatchJob(
         com.google.cloud.osconfig.v1.PatchJobs.CancelPatchJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.osconfig.v1.PatchJobs.PatchJob>
@@ -542,7 +578,13 @@ public final class OsConfigServiceGrpc {
       asyncUnimplementedUnaryCall(getCancelPatchJobMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get a list of patch jobs.
+     * </pre>
+     */
     public void listPatchJobs(
         com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobsResponse>
@@ -550,7 +592,13 @@ public final class OsConfigServiceGrpc {
       asyncUnimplementedUnaryCall(getListPatchJobsMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get a list of instance details for a given patch job.
+     * </pre>
+     */
     public void listPatchJobInstanceDetails(
         com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobInstanceDetailsRequest request,
         io.grpc.stub.StreamObserver<
@@ -559,7 +607,13 @@ public final class OsConfigServiceGrpc {
       asyncUnimplementedUnaryCall(getListPatchJobInstanceDetailsMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Create an OS Config patch deployment.
+     * </pre>
+     */
     public void createPatchDeployment(
         com.google.cloud.osconfig.v1.PatchDeployments.CreatePatchDeploymentRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.osconfig.v1.PatchDeployments.PatchDeployment>
@@ -567,7 +621,13 @@ public final class OsConfigServiceGrpc {
       asyncUnimplementedUnaryCall(getCreatePatchDeploymentMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get an OS Config patch deployment.
+     * </pre>
+     */
     public void getPatchDeployment(
         com.google.cloud.osconfig.v1.PatchDeployments.GetPatchDeploymentRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.osconfig.v1.PatchDeployments.PatchDeployment>
@@ -575,7 +635,13 @@ public final class OsConfigServiceGrpc {
       asyncUnimplementedUnaryCall(getGetPatchDeploymentMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get a page of OS Config patch deployments.
+     * </pre>
+     */
     public void listPatchDeployments(
         com.google.cloud.osconfig.v1.PatchDeployments.ListPatchDeploymentsRequest request,
         io.grpc.stub.StreamObserver<
@@ -584,7 +650,13 @@ public final class OsConfigServiceGrpc {
       asyncUnimplementedUnaryCall(getListPatchDeploymentsMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Delete an OS Config patch deployment.
+     * </pre>
+     */
     public void deletePatchDeployment(
         com.google.cloud.osconfig.v1.PatchDeployments.DeletePatchDeploymentRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -660,7 +732,15 @@ public final class OsConfigServiceGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * OS Config API
+   * The OS Config service is a server-side component that you can use to
+   * manage package installations and patch jobs for virtual machine instances.
+   * </pre>
+   */
   public static final class OsConfigServiceStub
       extends io.grpc.stub.AbstractAsyncStub<OsConfigServiceStub> {
     private OsConfigServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -672,7 +752,13 @@ public final class OsConfigServiceGrpc {
       return new OsConfigServiceStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Patch VM instances by creating and running a patch job.
+     * </pre>
+     */
     public void executePatchJob(
         com.google.cloud.osconfig.v1.PatchJobs.ExecutePatchJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.osconfig.v1.PatchJobs.PatchJob>
@@ -683,7 +769,14 @@ public final class OsConfigServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get the patch job. This can be used to track the progress of an
+     * ongoing patch job or review the details of completed jobs.
+     * </pre>
+     */
     public void getPatchJob(
         com.google.cloud.osconfig.v1.PatchJobs.GetPatchJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.osconfig.v1.PatchJobs.PatchJob>
@@ -694,7 +787,14 @@ public final class OsConfigServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Cancel a patch job. The patch job must be active. Canceled patch jobs
+     * cannot be restarted.
+     * </pre>
+     */
     public void cancelPatchJob(
         com.google.cloud.osconfig.v1.PatchJobs.CancelPatchJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.osconfig.v1.PatchJobs.PatchJob>
@@ -705,7 +805,13 @@ public final class OsConfigServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get a list of patch jobs.
+     * </pre>
+     */
     public void listPatchJobs(
         com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobsResponse>
@@ -716,7 +822,13 @@ public final class OsConfigServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get a list of instance details for a given patch job.
+     * </pre>
+     */
     public void listPatchJobInstanceDetails(
         com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobInstanceDetailsRequest request,
         io.grpc.stub.StreamObserver<
@@ -728,7 +840,13 @@ public final class OsConfigServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Create an OS Config patch deployment.
+     * </pre>
+     */
     public void createPatchDeployment(
         com.google.cloud.osconfig.v1.PatchDeployments.CreatePatchDeploymentRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.osconfig.v1.PatchDeployments.PatchDeployment>
@@ -739,7 +857,13 @@ public final class OsConfigServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get an OS Config patch deployment.
+     * </pre>
+     */
     public void getPatchDeployment(
         com.google.cloud.osconfig.v1.PatchDeployments.GetPatchDeploymentRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.osconfig.v1.PatchDeployments.PatchDeployment>
@@ -750,7 +874,13 @@ public final class OsConfigServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get a page of OS Config patch deployments.
+     * </pre>
+     */
     public void listPatchDeployments(
         com.google.cloud.osconfig.v1.PatchDeployments.ListPatchDeploymentsRequest request,
         io.grpc.stub.StreamObserver<
@@ -762,7 +892,13 @@ public final class OsConfigServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Delete an OS Config patch deployment.
+     * </pre>
+     */
     public void deletePatchDeployment(
         com.google.cloud.osconfig.v1.PatchDeployments.DeletePatchDeploymentRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -773,7 +909,15 @@ public final class OsConfigServiceGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * OS Config API
+   * The OS Config service is a server-side component that you can use to
+   * manage package installations and patch jobs for virtual machine instances.
+   * </pre>
+   */
   public static final class OsConfigServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<OsConfigServiceBlockingStub> {
     private OsConfigServiceBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -786,31 +930,63 @@ public final class OsConfigServiceGrpc {
       return new OsConfigServiceBlockingStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Patch VM instances by creating and running a patch job.
+     * </pre>
+     */
     public com.google.cloud.osconfig.v1.PatchJobs.PatchJob executePatchJob(
         com.google.cloud.osconfig.v1.PatchJobs.ExecutePatchJobRequest request) {
       return blockingUnaryCall(getChannel(), getExecutePatchJobMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get the patch job. This can be used to track the progress of an
+     * ongoing patch job or review the details of completed jobs.
+     * </pre>
+     */
     public com.google.cloud.osconfig.v1.PatchJobs.PatchJob getPatchJob(
         com.google.cloud.osconfig.v1.PatchJobs.GetPatchJobRequest request) {
       return blockingUnaryCall(getChannel(), getGetPatchJobMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Cancel a patch job. The patch job must be active. Canceled patch jobs
+     * cannot be restarted.
+     * </pre>
+     */
     public com.google.cloud.osconfig.v1.PatchJobs.PatchJob cancelPatchJob(
         com.google.cloud.osconfig.v1.PatchJobs.CancelPatchJobRequest request) {
       return blockingUnaryCall(getChannel(), getCancelPatchJobMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get a list of patch jobs.
+     * </pre>
+     */
     public com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobsResponse listPatchJobs(
         com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobsRequest request) {
       return blockingUnaryCall(getChannel(), getListPatchJobsMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get a list of instance details for a given patch job.
+     * </pre>
+     */
     public com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobInstanceDetailsResponse
         listPatchJobInstanceDetails(
             com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobInstanceDetailsRequest request) {
@@ -818,21 +994,39 @@ public final class OsConfigServiceGrpc {
           getChannel(), getListPatchJobInstanceDetailsMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Create an OS Config patch deployment.
+     * </pre>
+     */
     public com.google.cloud.osconfig.v1.PatchDeployments.PatchDeployment createPatchDeployment(
         com.google.cloud.osconfig.v1.PatchDeployments.CreatePatchDeploymentRequest request) {
       return blockingUnaryCall(
           getChannel(), getCreatePatchDeploymentMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get an OS Config patch deployment.
+     * </pre>
+     */
     public com.google.cloud.osconfig.v1.PatchDeployments.PatchDeployment getPatchDeployment(
         com.google.cloud.osconfig.v1.PatchDeployments.GetPatchDeploymentRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetPatchDeploymentMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get a page of OS Config patch deployments.
+     * </pre>
+     */
     public com.google.cloud.osconfig.v1.PatchDeployments.ListPatchDeploymentsResponse
         listPatchDeployments(
             com.google.cloud.osconfig.v1.PatchDeployments.ListPatchDeploymentsRequest request) {
@@ -840,7 +1034,13 @@ public final class OsConfigServiceGrpc {
           getChannel(), getListPatchDeploymentsMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Delete an OS Config patch deployment.
+     * </pre>
+     */
     public com.google.protobuf.Empty deletePatchDeployment(
         com.google.cloud.osconfig.v1.PatchDeployments.DeletePatchDeploymentRequest request) {
       return blockingUnaryCall(
@@ -848,7 +1048,15 @@ public final class OsConfigServiceGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * OS Config API
+   * The OS Config service is a server-side component that you can use to
+   * manage package installations and patch jobs for virtual machine instances.
+   * </pre>
+   */
   public static final class OsConfigServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<OsConfigServiceFutureStub> {
     private OsConfigServiceFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -861,7 +1069,13 @@ public final class OsConfigServiceGrpc {
       return new OsConfigServiceFutureStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Patch VM instances by creating and running a patch job.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.osconfig.v1.PatchJobs.PatchJob>
         executePatchJob(com.google.cloud.osconfig.v1.PatchJobs.ExecutePatchJobRequest request) {
@@ -869,7 +1083,14 @@ public final class OsConfigServiceGrpc {
           getChannel().newCall(getExecutePatchJobMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get the patch job. This can be used to track the progress of an
+     * ongoing patch job or review the details of completed jobs.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.osconfig.v1.PatchJobs.PatchJob>
         getPatchJob(com.google.cloud.osconfig.v1.PatchJobs.GetPatchJobRequest request) {
@@ -877,7 +1098,14 @@ public final class OsConfigServiceGrpc {
           getChannel().newCall(getGetPatchJobMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Cancel a patch job. The patch job must be active. Canceled patch jobs
+     * cannot be restarted.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.osconfig.v1.PatchJobs.PatchJob>
         cancelPatchJob(com.google.cloud.osconfig.v1.PatchJobs.CancelPatchJobRequest request) {
@@ -885,7 +1113,13 @@ public final class OsConfigServiceGrpc {
           getChannel().newCall(getCancelPatchJobMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get a list of patch jobs.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobsResponse>
         listPatchJobs(com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobsRequest request) {
@@ -893,7 +1127,13 @@ public final class OsConfigServiceGrpc {
           getChannel().newCall(getListPatchJobsMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get a list of instance details for a given patch job.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.osconfig.v1.PatchJobs.ListPatchJobInstanceDetailsResponse>
         listPatchJobInstanceDetails(
@@ -902,7 +1142,13 @@ public final class OsConfigServiceGrpc {
           getChannel().newCall(getListPatchJobInstanceDetailsMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Create an OS Config patch deployment.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.osconfig.v1.PatchDeployments.PatchDeployment>
         createPatchDeployment(
@@ -911,7 +1157,13 @@ public final class OsConfigServiceGrpc {
           getChannel().newCall(getCreatePatchDeploymentMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get an OS Config patch deployment.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.osconfig.v1.PatchDeployments.PatchDeployment>
         getPatchDeployment(
@@ -920,7 +1172,13 @@ public final class OsConfigServiceGrpc {
           getChannel().newCall(getGetPatchDeploymentMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Get a page of OS Config patch deployments.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.osconfig.v1.PatchDeployments.ListPatchDeploymentsResponse>
         listPatchDeployments(
@@ -929,7 +1187,13 @@ public final class OsConfigServiceGrpc {
           getChannel().newCall(getListPatchDeploymentsMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Delete an OS Config patch deployment.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deletePatchDeployment(
             com.google.cloud.osconfig.v1.PatchDeployments.DeletePatchDeploymentRequest request) {
