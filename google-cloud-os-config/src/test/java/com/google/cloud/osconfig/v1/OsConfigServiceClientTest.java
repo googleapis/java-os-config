@@ -93,7 +93,7 @@ public class OsConfigServiceClientTest {
             .setDescription("description-1724546052")
             .setDuration(Duration.newBuilder().build())
             .setDryRun(true)
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .build();
 
     PatchJobs.PatchJob actualResponse = client.executePatchJob(request);
@@ -130,7 +130,7 @@ public class OsConfigServiceClientTest {
               .setDescription("description-1724546052")
               .setDuration(Duration.newBuilder().build())
               .setDryRun(true)
-              .setDisplayName("display_name1615086568")
+              .setDisplayName("displayName1714148973")
               .build();
       client.executePatchJob(request);
       Assert.fail("No exception raised");
@@ -448,7 +448,7 @@ public class OsConfigServiceClientTest {
     ProjectName parent = ProjectName.of("[PROJECT]");
     PatchDeployments.PatchDeployment patchDeployment =
         PatchDeployments.PatchDeployment.newBuilder().build();
-    String patchDeploymentId = "patch_deployment_id-1817061090";
+    String patchDeploymentId = "patchDeploymentId-1180405976";
 
     PatchDeployments.PatchDeployment actualResponse =
         client.createPatchDeployment(parent, patchDeployment, patchDeploymentId);
@@ -477,7 +477,7 @@ public class OsConfigServiceClientTest {
       ProjectName parent = ProjectName.of("[PROJECT]");
       PatchDeployments.PatchDeployment patchDeployment =
           PatchDeployments.PatchDeployment.newBuilder().build();
-      String patchDeploymentId = "patch_deployment_id-1817061090";
+      String patchDeploymentId = "patchDeploymentId-1180405976";
       client.createPatchDeployment(parent, patchDeployment, patchDeploymentId);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
@@ -494,7 +494,7 @@ public class OsConfigServiceClientTest {
     String parent = "parent-995424086";
     PatchDeployments.PatchDeployment patchDeployment =
         PatchDeployments.PatchDeployment.newBuilder().build();
-    String patchDeploymentId = "patch_deployment_id-1817061090";
+    String patchDeploymentId = "patchDeploymentId-1180405976";
 
     PatchDeployments.PatchDeployment actualResponse =
         client.createPatchDeployment(parent, patchDeployment, patchDeploymentId);
@@ -523,7 +523,7 @@ public class OsConfigServiceClientTest {
       String parent = "parent-995424086";
       PatchDeployments.PatchDeployment patchDeployment =
           PatchDeployments.PatchDeployment.newBuilder().build();
-      String patchDeploymentId = "patch_deployment_id-1817061090";
+      String patchDeploymentId = "patchDeploymentId-1180405976";
       client.createPatchDeployment(parent, patchDeployment, patchDeploymentId);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
