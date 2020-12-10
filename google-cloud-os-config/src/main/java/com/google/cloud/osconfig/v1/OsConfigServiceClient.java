@@ -381,8 +381,8 @@ public class OsConfigServiceClient implements BackgroundResource {
    *
    * @param parent Required. The project to apply this patch deployment to in the form
    *     `projects/&#42;`.
-   * @param patch_deployment Required. The patch deployment to create.
-   * @param patch_deployment_id Required. A name for the patch deployment in the project. When
+   * @param patchDeployment Required. The patch deployment to create.
+   * @param patchDeploymentId Required. A name for the patch deployment in the project. When
    *     creating a name the following rules apply:
    *     <ul>
    *       <li>Must contain only lowercase letters, numbers, and hyphens.
@@ -413,8 +413,8 @@ public class OsConfigServiceClient implements BackgroundResource {
    *
    * @param parent Required. The project to apply this patch deployment to in the form
    *     `projects/&#42;`.
-   * @param patch_deployment Required. The patch deployment to create.
-   * @param patch_deployment_id Required. A name for the patch deployment in the project. When
+   * @param patchDeployment Required. The patch deployment to create.
+   * @param patchDeploymentId Required. A name for the patch deployment in the project. When
    *     creating a name the following rules apply:
    *     <ul>
    *       <li>Must contain only lowercase letters, numbers, and hyphens.
