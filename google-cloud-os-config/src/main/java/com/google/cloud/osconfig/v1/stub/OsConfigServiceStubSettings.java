@@ -51,7 +51,6 @@ import com.google.common.collect.Lists;
 import com.google.protobuf.Empty;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 import javax.annotation.Generated;
 import org.threeten.bp.Duration;
 
@@ -163,7 +162,7 @@ public class OsConfigServiceStubSettings extends StubSettings<OsConfigServiceStu
             @Override
             public Iterable<PatchJobs.PatchJob> extractResources(
                 PatchJobs.ListPatchJobsResponse payload) {
-              return Objects.isNull(payload.getPatchJobsList())
+              return payload.getPatchJobsList() == null
                   ? ImmutableList.<PatchJobs.PatchJob>of()
                   : payload.getPatchJobsList();
             }
@@ -212,7 +211,7 @@ public class OsConfigServiceStubSettings extends StubSettings<OsConfigServiceStu
             @Override
             public Iterable<PatchJobs.PatchJobInstanceDetails> extractResources(
                 PatchJobs.ListPatchJobInstanceDetailsResponse payload) {
-              return Objects.isNull(payload.getPatchJobInstanceDetailsList())
+              return payload.getPatchJobInstanceDetailsList() == null
                   ? ImmutableList.<PatchJobs.PatchJobInstanceDetails>of()
                   : payload.getPatchJobInstanceDetailsList();
             }
@@ -261,7 +260,7 @@ public class OsConfigServiceStubSettings extends StubSettings<OsConfigServiceStu
             @Override
             public Iterable<PatchDeployments.PatchDeployment> extractResources(
                 PatchDeployments.ListPatchDeploymentsResponse payload) {
-              return Objects.isNull(payload.getPatchDeploymentsList())
+              return payload.getPatchDeploymentsList() == null
                   ? ImmutableList.<PatchDeployments.PatchDeployment>of()
                   : payload.getPatchDeploymentsList();
             }
