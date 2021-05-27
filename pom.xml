@@ -75,22 +75,22 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-os-config-v1beta</artifactId>
-        <version>1.2.2</version><!-- {x-version-update:proto-google-cloud-os-config-v1beta:current} -->
+        <version>1.2.4-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-os-config-v1beta:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-os-config-v1alpha</artifactId>
-        <version>1.2.2</version><!-- {x-version-update:proto-google-cloud-os-config-v1alpha:current} -->
+        <version>1.2.4-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-os-config-v1alpha:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-os-config-v1alpha</artifactId>
-        <version>1.2.2</version><!-- {x-version-update:grpc-google-cloud-os-config-v1alpha:current} -->
+        <version>1.2.4-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-os-config-v1alpha:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-os-config-v1beta</artifactId>
-        <version>1.2.2</version><!-- {x-version-update:grpc-google-cloud-os-config-v1beta:current} -->
+        <version>1.2.4-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-os-config-v1beta:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
