@@ -2,5 +2,9 @@
 # module:released-version:current-version
 
 google-cloud-os-config:1.2.2:1.2.2
-proto-google-cloud-os-config-v1:1.2.2:1.2.2
 grpc-google-cloud-os-config-v1:1.2.2:1.2.2
+grpc-google-cloud-os-config-v1beta:1.2.2:1.2.2
+grpc-google-cloud-os-config-v1alpha:1.2.2:1.2.2
+proto-google-cloud-os-config-v1:1.2.2:1.2.2
+proto-google-cloud-os-config-v1alpha:1.2.2:1.2.2
+proto-google-cloud-os-config-v1beta:1.2.2:1.2.2
