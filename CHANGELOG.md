@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.3](https://www.github.com/googleapis/java-os-config/compare/v1.3.2...v1.3.3) (2021-07-15)
+
+
+### Bug Fixes
+
+* owlbot post-processor should generate README ([#1154](https://www.github.com/googleapis/java-os-config/issues/1154)) ([#312](https://www.github.com/googleapis/java-os-config/issues/312)) ([2eb3a2d](https://www.github.com/googleapis/java-os-config/commit/2eb3a2d4eb49b74682d127c5622a53c4d01553a9)), closes [#1146](https://www.github.com/googleapis/java-os-config/issues/1146) [#1147](https://www.github.com/googleapis/java-os-config/issues/1147)
+
 ### [1.3.2](https://www.github.com/googleapis/java-os-config/compare/v1.3.1...v1.3.2) (2021-07-01)
 
 
