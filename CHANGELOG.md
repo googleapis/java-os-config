@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://www.github.com/googleapis/java-os-config/compare/v1.3.2...v1.4.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#323](https://www.github.com/googleapis/java-os-config/issues/323)) ([9ba7276](https://www.github.com/googleapis/java-os-config/commit/9ba7276ed2a04fb73f670519e1e044c35552a1d2))
+
 ### [1.3.2](https://www.github.com/googleapis/java-os-config/compare/v1.3.1...v1.3.2) (2021-07-01)
 
 
