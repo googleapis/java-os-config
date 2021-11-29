@@ -94,8 +94,7 @@ public final class Inventories {
     java.lang.String[] descriptorData = {
       "\n"
           + "(google/cloud/osconfig/v1/inventory.pro"
-          + "to\022\030google.cloud.osconfig.v1\032\037google/api"
-          + "/field_behavior.proto\032\031google/api/resource.proto\032\037google/protobuf/timestamp.proto\032\026google/type/date.proto\"\330\025\n"
+          + "to\022\030google.cloud.osconfig.v1\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032\037google/protobuf/timestamp.proto\032\026google/type/date.proto\"\330\025\n"
           + "\tInventory\022\021\n"
           + "\004name\030\003 \001(\tB\003\340A\003\022;\n"
           + "\007os_info\030\001 \001(\0132*.google.cloud.osconfig.v1.Inventory.OsInfo\022=\n"
