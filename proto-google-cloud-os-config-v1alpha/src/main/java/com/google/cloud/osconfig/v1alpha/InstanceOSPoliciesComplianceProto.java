@@ -58,8 +58,7 @@ public final class InstanceOSPoliciesComplianceProto {
     java.lang.String[] descriptorData = {
       "\n"
           + "Cgoogle/cloud/osconfig/v1alpha/instance_os_policies_compliance.proto\022\035google.cl"
-          + "oud.osconfig.v1alpha\032\037google/api/field_b"
-          + "ehavior.proto\032\031google/api/resource.proto\0321google/cloud/osconfig/v1alpha/config_common.proto\032\037google/protobuf/timestamp.proto\"\350\006\n"
+          + "oud.osconfig.v1alpha\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\0321google/cloud/osconfig/v1alpha/config_common.proto\032\037google/protobuf/timestamp.proto\"\350\006\n"
           + "\034InstanceOSPoliciesCompliance\022\021\n"
           + "\004name\030\001 \001(\tB\003\340A\003\022\025\n"
           + "\010instance\030\002 \001(\tB\003\340A\003\022J\n"
