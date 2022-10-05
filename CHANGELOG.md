@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.6](https://github.com/googleapis/java-os-config/compare/v2.5.5...v2.5.6) (2022-10-05)
+
+
+### Bug Fixes
+
+* update protobuf to v3.21.7 ([e8e2da5](https://github.com/googleapis/java-os-config/commit/e8e2da55a237b6f702dcf8fe3c1970a5707bf1f5))
+
 ## [2.5.5](https://github.com/googleapis/java-os-config/compare/v2.5.4...v2.5.5) (2022-10-03)
 
 
