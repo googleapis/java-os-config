@@ -77,7 +77,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-os-config-v1alpha</artifactId>
-        <version>2.6.0</version><!-- {x-version-update:proto-google-cloud-os-config-v1alpha:current} -->
+        <version>2.5.6</version><!-- {x-version-update:proto-google-cloud-os-config-v1alpha:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
