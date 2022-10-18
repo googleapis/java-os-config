@@ -81,7 +81,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-os-config-v1beta</artifactId>
-        <version>2.5.6</version><!-- {x-version-update:grpc-google-cloud-os-config-v1beta:current} -->
+        <version>2.6.0</version><!-- {x-version-update:grpc-google-cloud-os-config-v1beta:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
