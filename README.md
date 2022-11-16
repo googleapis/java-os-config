@@ -9,6 +9,13 @@ Java idiomatic client for [OS Config API][product-docs].
 - [Client Library Documentation][javadocs]
 
 
+:bus: In October 2022, this library has moved to
+[google-cloud-java/java-os-config](
+https://github.com/googleapis/google-cloud-java/tree/main/java-os-config).
+This repository will be archived in the future.
+Future releases will appear in the new repository (https://github.com/googleapis/google-cloud-java/releases).
+The Maven artifact coordinates (`com.google.cloud:google-cloud-os-config`) remain the same.
+
 ## Quickstart
 
 
@@ -19,20 +26,20 @@ If you are using Maven, add this to your pom.xml file:
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-os-config</artifactId>
-  <version>2.5.6</version>
+  <version>2.7.0</version>
 </dependency>
 ```
 
 If you are using Gradle without BOM, add this to your dependencies:
 
 ```Groovy
-implementation 'com.google.cloud:google-cloud-os-config:2.5.6'
+implementation 'com.google.cloud:google-cloud-os-config:2.7.0'
 ```
 
 If you are using SBT, add this to your dependencies:
 
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-os-config" % "2.5.6"
+libraryDependencies += "com.google.cloud" % "google-cloud-os-config" % "2.7.0"
 ```
 
 ## Authentication
